@@ -298,29 +298,37 @@ a{
 }
 
 
-.album-img {
+.album-img img {
     z-index: 2;
+    height: 4rem;
+    position: relative;
+    top:0.1rem;
+    right: 0.1rem;
     margin : 0.25rem;
-    border-radius: 1rem;
+    border-radius: 0.6rem;
 }
 
 .album-info {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 532;
     overflow: hidden;
 }
 
-.album-info div {
-    margin: 0.5rem 0.1rem;
+.album-info span {
+    margin: 0.75rem 0.1rem;
 }
 
-.album-info div:hover {
+.album-info span:hover {
     text-decoration: underline;
 }
 
+.album-song-name a{
+  margin: 0.25rem 0.25rem;
+}
+
 .album-artist  a {
-  margin:  0;
-  font-size: 0.8rem;
+  margin:  0.5rem;
+  font-size: 1rem;
   opacity: 0.6;
   display: flex;
   flex-wrap: nowrap;
@@ -352,6 +360,107 @@ a{
     width: 1.5rem;
     margin : 0.5rem 0.15rem;
 }
+
+@media (max-width :1012px){
+    .album {
+        width: 25%;
+        display: flex;
+    }
+    
+    
+    .album-img img {
+        z-index: 2;
+        height: 3rem;
+        position: relative;
+        top:0.1rem;
+        right: 0.1rem;
+        margin : 0.25rem;
+        border-radius: 0.6rem;
+    }
+    
+    .album-info {
+        font-size: 0.6rem;
+        font-weight: 532;
+        overflow: hidden;
+    }
+    
+    .album-info div {
+        margin: 0.5rem 0.1rem;
+    }
+    
+    .album-info div:hover {
+        text-decoration: underline;
+    }
+    
+    .album-song-name a{
+        margin: 0.25rem 0.25rem;
+      }
+
+    .album-artist  a {
+      margin:  0.5rem;
+      font-size: 0.6rem;
+      opacity: 0.6;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    
+    .album-icons {
+        display: flex;
+        z-index: 2;
+    
+    }
+    .album-icons span{
+        font-size: 0.6rem;
+    
+    }
+    
+    .heart-add {
+        margin: 0.2rem;
+        font-size:0.6rem;
+    } 
+}
+
+@media(max-width: 632px){
+    .album-img img {
+        z-index: 2;
+        height: 2rem;
+        position: relative;
+        top:0.1rem;
+        right: 0.1rem;
+        margin : 0.25rem;
+        border-radius: 0.6rem;
+    } 
+
+    .album-song-name a{
+        margin: 0.25rem 0.25rem;
+      }
+
+    .album-artist  a {
+        margin:  0.5rem;
+        font-size: 0.4rem;
+        opacity: 0.6;
+        display: flex;
+        flex-wrap: nowrap;
+      }
+
+      .album-artist  a {
+        margin:  0;
+        font-size: 0.4rem;
+        opacity: 0.6;
+        display: flex;
+        flex-wrap: nowrap;
+      }
+
+      .album-icons span{
+        font-size: 0.4rem;
+    }
+    
+    .heart-add {
+        margin: 0.2rem;
+        font-size:0.4rem;
+    }
+}
+
 
 .devices {
     display: flex;
