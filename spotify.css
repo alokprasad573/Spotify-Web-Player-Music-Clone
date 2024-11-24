@@ -1,3 +1,5 @@
+/* Main Page */
+
 body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
@@ -8,20 +10,20 @@ body {
     box-sizing: border-box;
 }
 
-.main{
+.main {
     display: flex;
     height: 100vh;
     padding: 0.5rem;
 }
 
 .sidebar {
-   background-color: black;
+    background-color: black;
     width: 350px;
     border-radius: 1rem;
     margin-right: 0.5rem;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
@@ -31,7 +33,7 @@ a{
     flex: 1;
     border-radius: 1rem;
     overflow: auto;
-    padding : 0 1.5rem 0 1.5rem
+    padding: 0 1.5rem 0 1.5rem
 }
 
 .music-player {
@@ -42,6 +44,7 @@ a{
     bottom: 0;
 }
 
+/* Side-Navigation Bar */
 
 .nav {
     background-color: #121212;
@@ -72,7 +75,7 @@ a{
     opacity: 1;
 }
 
-.library{
+.library {
     background-color: #121212;
     border-radius: 1rem;
     height: 100%;
@@ -80,13 +83,13 @@ a{
     padding: 0.5rem 0.75rem;
 }
 
-.options{
+.options {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.lib-options img{
+.lib-options img {
     height: 1.25rem;
     width: 1.25rem;
     padding-right: 0.5rem;
@@ -98,7 +101,7 @@ a{
 }
 
 .icon i {
-    opacity:0.7;
+    opacity: 0.7;
     margin-right: 1rem;
 }
 
@@ -106,7 +109,7 @@ a{
     opacity: 1;
 }
 
-.boxes{
+.boxes {
     height: 10rem;
     background-color: #232323;
     border-radius: 0.75rem;
@@ -114,13 +117,13 @@ a{
     padding: 0.75rem 1.25rem;
 }
 
-.box-p1{
+.box-p1 {
     font-size: 1rem;
     font-weight: 700;
 
 }
 
-.box-p2{
+.box-p2 {
     font-size: 0.85rem;
     opacity: 0.75;
 }
@@ -129,7 +132,7 @@ a{
     height: 2rem;
     width: fit-content;
     background-color: white;
-    border : none;
+    border: none;
     border-radius: 100px;
     padding: 0.25rem 1rem;
     font-size: 1rem;
@@ -137,25 +140,27 @@ a{
     margin-top: 0.5rem;
 }
 
+/* Main Content Navigation Bar */
+
 .sticky-nav {
-    position : sticky;
+    position: sticky;
     top: 0;
     background-color: #181818;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding : 1rem;
+    padding: 1rem;
     z-index: 10;
 }
 
-.nav-directions img{
+.nav-directions img {
     height: 1.5rem;
     width: 1.5rem;
     margin-left: 0.5rem;
 }
 
-.nav-profile-items{
-    margin-right: 1rem;
+.nav-profile-items {
+    margin: 0 1rem;
 }
 
 @media (max-width: 1000px) {
@@ -169,12 +174,38 @@ a{
 
 }
 
+@media(max-width: 613px) {
+    .nav-profile-items-download {
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 603px) {
+    .nav-profile-items-download {
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 568px) {
+    .nav-profile-items-download {
+        display: none;
+    }
+}
+
+@media(max-width: 663px) {
+    .nav-profile-items {
+        display: none;
+    }
+}
+
+/* Main Content  Albums */
+
 .card {
     background-color: #181818;
     width: 225px;
     border-radius: 1rem;
     padding: 1rem;
-    margin-left : 0.5rem;
+    margin-left: 0.5rem;
 }
 
 .cards-container {
@@ -203,23 +234,21 @@ a{
     background-color: #252525;
 }
 
-.footer{
+.footer {
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.line{
-    width:98%;
-    height : 50%;
+.line {
+    width: 98%;
+    height: 50%;
     border-top: 3px solid white;
     opacity: 0.3;
 }
 
-
-/*CSS class="player"*/
-
+/* Music-palyeer player */
 
 .music-player {
     display: flex;
@@ -257,32 +286,32 @@ a{
     height: 2.25rem;
 }
 
-.playback-bar{
+.playback-bar {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.progress-bar{
+.progress-bar {
     width: 80%;
-    margin : 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
     appearance: none;
     background-color: transparent;
     cursor: pointer;
     touch-action: none;
 }
 
-.progress-bar::-webkit-slider-runnable-track{
+.progress-bar::-webkit-slider-runnable-track {
     background-color: white;
     border-radius: 100px;
-    height:0.3rem;
+    height: 0.3rem;
 }
 
-.progress-bar::-webkit-slider-runnable-track:hover{
+.progress-bar::-webkit-slider-runnable-track:hover {
     background-color: green;
 }
 
-.progress-bar::-webkit-slider-thumb{
+.progress-bar::-webkit-slider-thumb {
     appearance: none;
     height: 1rem;
     width: 1rem;
@@ -292,6 +321,7 @@ a{
 }
 
 
+/* Music-player playing-album */
 .album {
     width: 25%;
     display: flex;
@@ -302,9 +332,9 @@ a{
     z-index: 2;
     height: 4rem;
     position: relative;
-    top:0.1rem;
+    top: 0.1rem;
     right: 0.1rem;
-    margin : 0.25rem;
+    margin: 0.25rem;
     border-radius: 0.6rem;
 }
 
@@ -315,23 +345,21 @@ a{
 }
 
 .album-info span {
-    margin: 0.75rem 0.1rem;
+    margin: 0.5rem 0.25rem 0 0.25rem;
+    vertical-align: baseline;
 }
 
 .album-info span:hover {
     text-decoration: underline;
 }
 
-.album-song-name a{
-  margin: 0.25rem 0.25rem;
-}
 
-.album-artist  a {
-  margin:  0.5rem;
-  font-size: 1rem;
-  opacity: 0.6;
-  display: flex;
-  flex-wrap: nowrap;
+.album-artist {
+    margin: 0.5rem;
+    font-size: 1rem;
+    opacity: 0.6;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .album-icons {
@@ -339,130 +367,124 @@ a{
     z-index: 2;
 
 }
-.album-icons span{
-    font-size: 1rem;
 
+.album-icons span {
+    font-size: 1rem;
+    vertical-align: baseline;
 }
 
 .heart-add {
     margin: 0.2rem;
 }
 
+@media(max-width: 1149px) {
+    .album-img img {
+        height: 3.5rem;
+    }
+
+    .album-info {
+        font-size: 0.8rem;
+    }
+
+    .album-artist {
+        font-size: 0.8rem;
+    }
+
+    .album-icons i {
+        font-size: 0.8rem;
+    }
+
+    .album-icons span {
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 781px) {
+    .album-img img {
+        height: 3.0rem;
+    }
+
+    .album-info {
+        font-size: 0.6rem;
+    }
+
+    .album-artist {
+        font-size: 0.6rem;
+    }
+
+    .album-icons i {
+        font-size: 0.6rem;
+    }
+
+    .album-icons span {
+        font-size: 0.6rem;
+    }
+}
+
+@media(max-width: 580px) {
+    .album-img img {
+        height: 2.5rem;
+    }
+
+    .album-info {
+        font-size: 0.5rem;
+    }
+
+    .album-artist {
+        font-size: 0.5rem;
+    }
+
+    .album-icons i {
+        font-size: 0.5rem;
+    }
+
+    .album-icons span {
+        font-size: 0.5rem;
+    }
+}
+
+@media(max-width: 466px) {
+    .album-img img {
+        z-index: 2;
+        height: 4rem;
+        position: relative;
+        top: 0.1rem;
+        right: 0.1rem;
+        margin: 0.25rem;
+        border-radius: 0.6rem;
+    }
+
+    .album-info {
+        display: none;
+    }
+
+    .album-artist {
+        display: none;
+    }
+
+    .album-icons i {
+        display: none;
+    }
+
+    .album-icons span {
+        display: none;
+    }
+}
+
+@media(max-width:400px) {
+    .album-img img {
+        height: 3.0rem;
+    }
+}
+
+/* Music-player player-controls */
 .controls {
     width: 25%;
     display: flex;
     justify-content: center;
 }
 
-.controls img {
-    display: inline;
-    height: 2rem;
-    width: 1.5rem;
-    margin : 0.5rem 0.15rem;
-}
-
-@media (max-width :1012px){
-    .album {
-        width: 25%;
-        display: flex;
-    }
-    
-    
-    .album-img img {
-        z-index: 2;
-        height: 3rem;
-        position: relative;
-        top:0.1rem;
-        right: 0.1rem;
-        margin : 0.25rem;
-        border-radius: 0.6rem;
-    }
-    
-    .album-info {
-        font-size: 0.6rem;
-        font-weight: 532;
-        overflow: hidden;
-    }
-    
-    .album-info div {
-        margin: 0.5rem 0.1rem;
-    }
-    
-    .album-info div:hover {
-        text-decoration: underline;
-    }
-    
-    .album-song-name a{
-        margin: 0.25rem 0.25rem;
-      }
-
-    .album-artist  a {
-      margin:  0.5rem;
-      font-size: 0.6rem;
-      opacity: 0.6;
-      display: flex;
-      flex-wrap: nowrap;
-    }
-    
-    .album-icons {
-        display: flex;
-        z-index: 2;
-    
-    }
-    .album-icons span{
-        font-size: 0.6rem;
-    
-    }
-    
-    .heart-add {
-        margin: 0.2rem;
-        font-size:0.6rem;
-    } 
-}
-
-@media(max-width: 632px){
-    .album-img img {
-        z-index: 2;
-        height: 2rem;
-        position: relative;
-        top:0.1rem;
-        right: 0.1rem;
-        margin : 0.25rem;
-        border-radius: 0.6rem;
-    } 
-
-    .album-song-name a{
-        margin: 0.25rem 0.25rem;
-      }
-
-    .album-artist  a {
-        margin:  0.5rem;
-        font-size: 0.4rem;
-        opacity: 0.6;
-        display: flex;
-        flex-wrap: nowrap;
-      }
-
-      .album-artist  a {
-        margin:  0;
-        font-size: 0.4rem;
-        opacity: 0.6;
-        display: flex;
-        flex-wrap: nowrap;
-      }
-
-      .album-icons span{
-        font-size: 0.4rem;
-    }
-    
-    .heart-add {
-        margin: 0.2rem;
-        font-size:0.4rem;
-    }
-}
-
-
-.devices {
+.switch-devices {
     display: flex;
     margin-left: 1rem;
     height: 1rem;
@@ -482,7 +504,7 @@ a{
 .volume-bar::-webkit-slider-runnable-track {
     background-color: white;
     border-radius: 100px;
-    height:0.3rem;
+    height: 0.3rem;
 }
 
 .volume-bar::-webkit-slider-thumb {
